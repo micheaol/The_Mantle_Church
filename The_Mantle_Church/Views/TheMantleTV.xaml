@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:The_Mantle_Church"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:forms="clr-namespace:InTheHand.Forms;assembly=InTheHand.Forms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:The_Mantle_Church.Controls;assembly=The_Mantle_Church"
+             mc:Ignorable="d"
+             x:Class="The_Mantle_Church.Views.TheMantleTV"
+             x:Name="This">
+            <ContentPage.BindingContext>
+                <x:Reference Name="This" />
+            </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <ActivityIndicator Grid.Row="0"
+                           IsRunning="{Binding IsLoading}"
+                           IsVisible="{Binding IsLoading}"/>
+    
+        <!--If you want custom behavior for enter/exit full-screen, you can bind your custom commands, e.g.-->
+            <controls:FullScreenEnabledWebView Grid.Row="1"
+                                               Source="https://www.youtube.com/channel/UCKHayA_q4Ofd7p95OV15C-Q"
+                                               Navigated="OnWebViewNavigated"
+                                               EnterFullScreenCommand="{Binding MyEnterFullScreenCommand}"
+                                               ExitFullScreenCommand="{Binding MyExitFullScreenCommand}" />
+        
+        <!--For this sample, however, the default behavior suffices.-->
+        
+        <controls:FullScreenEnabledWebView Grid.Row="1"
+                                           Source="https://www.youtube.com/channel/UCKHayA_q4Ofd7p95OV15C-Q"
+                                           Navigated="OnWebViewNavigated" />
+    </Grid>
+</ContentPage>

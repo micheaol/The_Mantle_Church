@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:The_Mantle_Church.Views"
+             mc:Ignorable="d"
+             FlyoutHeaderBehavior="CollapseOnScroll"
+             Shell.ItemTemplate="{StaticResource MenuTemplate}"
+             Shell.MenuItemTemplate="{StaticResource MenuTemplate}"
+             Shell.FlyoutHeaderTemplate="{StaticResource FlyoutHeaderTemplate}"
+             x:Class="The_Mantle_Church.AppShell">
+
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="ThemeColor">#EF3D55</Color>
+            <Color x:Key="GrayColor">Gray</Color>
+            <Color x:Key="BgColor">#F0F0F0</Color>
+            <Color x:Key="BackColor">#29376e</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource BgColor}"/>
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource ThemeColor}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource GrayColor}"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource ThemeColor}"/>
+                <Setter Property="Shell.BackgroundColor"  Value="{StaticResource BackColor}"/>
+            </Style>
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}"/>
+            <DataTemplate x:Key="MenuTemplate">
+                <StackLayout Orientation="Horizontal">
+                    <Image Margin="30,10,20,10" Source="{Binding Icon}" WidthRequest="22" HeightRequest="22" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    <Label Text="{Binding Title}" TextColor="#686868" FontSize="16" VerticalOptions="Center"/>
+                </StackLayout>
+            </DataTemplate>
+            <DataTemplate x:Key="FlyoutHeaderTemplate">
+                <ContentView BackgroundColor="{StaticResource BackColor}" HeightRequest="245">
+                    <Image Source="daddymummy.png" WidthRequest="300" HeightRequest="400"
+                       HorizontalOptions="Fill" VerticalOptions="Fill"/>
+                </ContentView>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+
+    <FlyoutItem Title="Home" Icon="home.png">
+        <Tab Title="About Us" Icon="dashboard.png">
+            <ShellContent ContentTemplate="{DataTemplate views:AboutPage}"/>
+        </Tab>
+        <Tab Title="Prayer Center" Icon="heart.png">
+            <ShellContent ContentTemplate="{DataTemplate views:PrayerCenterPage}"/>
+        </Tab>
+        <Tab Title="The Mantle TV" Icon="profile.png">
+            <ShellContent ContentTemplate="{DataTemplate views:TheMantleTV}"/>
+        </Tab>
+        <Tab Title="Give" Icon="more.png">
+            <ShellContent ContentTemplate="{DataTemplate views:GivePage}"/>
+        </Tab>
+    </FlyoutItem>
+    <MenuItem Text="Prayer Center Desk" Command="{Binding NavigateCommand}" CommandParameter="prayercenter" IconImageSource="photo.png"/>
+    <MenuItem Text="Our Facebook Page" Command="{Binding NavigateCommand}" CommandParameter="FacebookPage" IconImageSource="article.png"/>
+    <MenuItem Text="The Mantle TV" Command="{Binding NavigateCommand}" CommandParameter="TheMantleTV" IconImageSource="article.png"/>
+    <MenuItem Text="The Mantle Radio" Command="{Binding NavigateCommand}" CommandParameter="Radio" IconImageSource="briefcase.png"/>
+    <MenuItem Text="About Us" Command="{Binding NavigateCommand}" CommandParameter="About" IconImageSource="settings.png"/>
+    <MenuItem Text="7-Mantle Course" Command="{Binding SettingsCommand}" CommandParameter="mantlecourse" IconImageSource="settings.png"/>
+    
+
+</Shell>

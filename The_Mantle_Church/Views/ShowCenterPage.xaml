@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="The_Mantle_Church.Views.ShowCenterPage">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  BackgroundColor="AntiqueWhite">
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--<Image Source="daddy.png" Aspect="Fill" HeightRequest="270" VerticalOptions="StartAndExpand"/>-->
+                <!--<ImageButton Source="menu.png" WidthRequest="23" HeightRequest="15" Margin="20,50" HorizontalOptions="Start" VerticalOptions="Start"/>-->
+                <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="2" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="3" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="4" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="5" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="6" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="7" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="8" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="9" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <Frame Grid.Row="10" HasShadow="True" CornerRadius="10" Margin="20,20,20,0" Padding="18" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Pst. Michael Ajogba" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="(+2347062022215)" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                <Image Source="location.png" WidthRequest="10" HeightRequest="15" VerticalOptions="Center"/>
+                                <Label Text="Kubwa, Abuja – Nigeria" TextColor="#34495E" FontSize="14" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

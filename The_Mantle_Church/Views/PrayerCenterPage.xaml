@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="The_Mantle_Church.Views.PrayerCenterPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="locationcenter.png" HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   Margin="10"/>
+            
+            <Label Text="Search for the closest Prayer center and contact fire."
+                   FontSize="Medium"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="5"/>
+
+            
+
+
+            <Button Text="View all the prayer Centers"
+                    CornerRadius="15"
+                    Margin="20"
+                    BackgroundColor="LightGoldenrodYellow"
+                    Clicked="Centerbtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
